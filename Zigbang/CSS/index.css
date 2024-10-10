@@ -74,11 +74,12 @@ nav .main-list {
     position: relative;
     top: 0;
     padding:5px 10px;
+    line-height: 16px;
 }
 .list-menu > a {
     background-color: white;
     /* display: block; */
-    padding: 10px 10px;
+    padding: 10px 15px;
 }
 
 .list-menu span {
@@ -105,7 +106,7 @@ nav .main-list {
     align-items: center;
 }
 .top-layer-right .login {
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(240, 240, 240);
     border: 1px solid rgb(202, 202, 202);
     border-radius: 5px;
     color: black;
@@ -113,9 +114,14 @@ nav .main-list {
     width: 125px !important;
     height: 30px;
     margin-right: 20px;
+    font-weight: bold;
 }
+.login:hover {
+    background-color: rgb(220, 220, 220);
+}
+
 .top-layer-right > div > div {
-    width: 123px;
+    width: 150px;
     padding: 10px 0px;
     /* background-color: brown; */
     display: flex;
@@ -123,9 +129,15 @@ nav .main-list {
 }
 .top-layer-right > div > div a {
     display: block;
-    font-size: 14px;
+    font-size: 15.5px;
     text-align: right;
     font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: -0.5px;
+    line-height: 18px;
+}
+.top-layer-right span {
+    display: block;
 }
 .top-light-banner {
     color: hsl(120, 100%, 15%);
