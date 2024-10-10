@@ -21,7 +21,7 @@ p {
     width: 100%;
     min-width: 1200px;
     /* overflow: hidden; */
-    background-color: hsl(101, 61%, 19%);
+    /* background-color: hsl(101, 61%, 19%); */
 }
 
 /* header - start */
@@ -29,7 +29,7 @@ p {
 header {
     height: 80px;
     position: relative;
-    background-color: hsl(0, 0%, 60%);
+    /* background-color: hsl(0, 0%, 60%); */
     top: 0;
     margin: 0;
     padding: 0;
@@ -41,9 +41,10 @@ nav {
     width: 100%;
     align-items: center;
     display: flex;
-    background-color: hsl(240, 100%, 80%);
+    /* background-color: hsl(240, 100%, 80%); */
     position: relative;
     top: 0;
+    z-index: 900;
 }
 
 nav > * {
@@ -51,11 +52,11 @@ nav > * {
     align-items: center;
 }
 nav > a {
-    box-sizing: border-box;
+    padding:0 10px;
     width: 200px;
     height: 80px;
     align-items: center;
-    background-color: hsl(60, 100%, 70%);
+    /* background-color: hsl(60, 100%, 70%); */
 }
 nav > a > img {
     width: 200px;
@@ -64,28 +65,28 @@ nav > a > img {
 nav .main-list {
     box-sizing: border-box;
     width: 900px;
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 
 .list-menu {
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     position: relative;
     top: 0;
-    padding:0 10px;
+    padding:5px 10px;
 }
 .list-menu > a {
     background-color: white;
     /* display: block; */
-    /* padding: 3px 10px; */
+    padding: 10px 10px;
 }
 
 .list-menu span {
     display: block;
-    font-size: 14px;
+    font-size: 11px;
 }
 .list-menu span:first-child {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -93,13 +94,15 @@ nav .main-list {
     box-sizing: border-box;
     justify-content: flex-end;
     display: flex;
+    align-items: center;
     width: calc(100% - 1100px);
     /* align-items: center; */
-    background-color: hsl(340, 60%, 80%);
+    /* background-color: hsl(340, 60%, 80%); */
 
 }
 .top-layer-right > div:first-child {
     display: flex;
+    align-items: center;
 }
 .top-layer-right .login {
     background-color: rgb(232, 232, 232);
@@ -112,9 +115,21 @@ nav .main-list {
     margin-right: 20px;
 }
 .top-layer-right > div > div {
-    width: 113px;
+    width: 123px;
+    padding: 10px 0px;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
 }
-
+.top-layer-right > div > div a {
+    display: block;
+    font-size: 14px;
+    text-align: right;
+    font-weight: bold;
+}
+.top-light-banner {
+    color: hsl(120, 100%, 15%);
+}
 
 
 /* 
