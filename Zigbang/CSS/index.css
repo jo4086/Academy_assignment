@@ -85,9 +85,15 @@ nav .main-list {
 .list-menu span {
     display: block;
     font-size: 11px;
+    height: 22px;
+    /* background-color: red; */
+    line-height: 22px;
 }
 .list-menu span:first-child {
     font-size: 17px;
+    /* background-color: blue; */
+    /* height: 30px; */
+    /* line-height: 30px; */
     font-weight: bold;
 }
 
@@ -157,3 +163,23 @@ nav .login {
 }
  */
  
+
+ /* 메인 start */
+ .main-1 .main-backimg {
+    background-image: url(../images/bg.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color :white;
+    font-weight: bold;
+ }
+
+ .main-backimg h2 {
+    font-size:35px;
+    letter-spacing: -1px;
+    font-weight: bold;
+ }
