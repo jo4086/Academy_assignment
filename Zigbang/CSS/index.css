@@ -329,3 +329,19 @@ input::placeholder {
 .tab_list_relative>li:nth-child(2):target .tab_list_relative>li:last-child {
    left:114px;
 }
+section {
+   display: flex;
+   justify-content: center;
+   letter-spacing: -0.8px;
+}
+section:nth-child(2) {
+   width: 900px;
+   /* background-color: yellow; */
+   margin: 0 auto;
+   margin-top: 50px;
+   background-color: tan;
+   display: flex;
+}
+.st-2box {
+   width: 32%;
+}

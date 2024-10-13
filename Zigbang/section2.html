@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        section {
+            width: 100%;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul.u1 {
+            width: 960px;
+            margin: 0 auto;
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            /* background-color: aqua; */
+        }
+        .li_a {
+            margin: 0;
+            padding: 0;
+            /* background-color: thistle; */
+            width: 290px;
+            margin: 0 15px;
+        }
+    </style>
+    <section>
+
+        <ul class="u1">
+            <li class="li_a">
+                <div style="display: flex;height: 30px;background-color: yellow;align-items: center;">
+                    <h6 style="display: flex;font-size: 18px;height: 30px;width: calc(100% - 66px);
+                    background-color: red;line-height: 30px;letter-spacing: -0.5px;">소개할게요</h6>
+                    <button style="width: 66px;display: flex;justify-content: center;
+                    height: 30px;align-items: center;border-radius: 5px;letter-spacing: -0.8px;">더보기</button>
+                </div>
+                <hr style="background: hsl(0, 0%, 80%);height: 1px;border: 0;">
+                <div>
+                    <a href="#" >
+                    <img src="./images/banner1.jpg" width="100%" style="margin-top: 10px;" alt="배너1">
+                </a>
+                </div>
+            </li>
+            <li class="li_a">
+                <div style="display: flex;height: 30px;background-color: yellow;align-items: center;">
+                    <h6 style="display: flex;font-size: 18px;height: 30px;width: calc(100% - 66px);
+                    background-color: red;line-height: 30px;letter-spacing: -0.5px;">뉴스</h6>
+                    <button style="width: 66px;display: flex;justify-content: center;height: 30px;align-items: center;border-radius: 5px;letter-spacing: -0.8px;">더보기</button>
+                </div>
+                <hr style="background: hsl(0, 0%, 80%);height: 1px;border: 0;">
+                <style>
+                    .li_b {
+                        letter-spacing: -0.6px;
+                        font-size: 13px;
+                        font-weight: bold;
+                        line-height: 35px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        height: 35px;
+                    }
+                    .li_b a {
+                        text-decoration: none;
+                    }
+
+                </style>
+                <div>
+                    <ul class="u2">
+                        <li class="li_b"><a href="">9월 서울 아파트 매매 상승거래 비중 48.5%</a></li>
+                        <li class="li_b"><a href="">10월 전국 3만 0,55세대 분양예정</a></li>
+                        <li class="li_b"><a href="">10월 전국 2만 7,848세대 입주, 지방 63% 차지</a></li>
+                        <li class="li_b"><a href="">랭킹데이터로 살펴본 2024년 수도권 아파트 시장</a></li>
+                        <li class="li_b"><a href="">서울 아파트 매매거래 총액, 2024년 8월까지 44조원 규모</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="li_a">
+                <div style="display: flex;height: 30px;background-color: yellow;align-items: center;">
+                    <h6 style="display: flex;font-size: 18px;height: 30px;width: calc(100% - 66px);
+                    background-color: red;line-height: 30px;letter-spacing: -0.5px;">뉴스</h6>
+                    <button style="width: 66px;display: flex;justify-content: center;height: 30px;align-items: center;border-radius: 5px;letter-spacing: -0.8px;">더보기</button>
+                </div>
+                <hr style="background: hsl(0, 0%, 80%);height: 1px;border: 0;">
+                <div>
+                    <ul class="u2">
+                        <li class="li_b"><a href="">[공지]일부 단지 실거래 정보 미노출 및 업데이트 지연 안내</a></li>
+                        <li class="li_b"><a href="">[공지] 직방 개인정보 처리방침 (2024/09/19) 개정안내</a></li>
+                        <li class="li_b"><a href="">[공지] 직방 서비스이용약관 (2024/07/09) 개정안내</a></li>
+                        <li class="li_b"><a href="">[공지] 직방 개인정보처리방침 (2024/07/08) 개정안내</a></li>
+                        <li class="li_b"><a href="">[공지] 직방 개인정보처리방침 (2024/01/12) 개정안내</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>
