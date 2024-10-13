@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+        }
+
+        .CBX {
+            width: 114px;
+            height: 36px;
+            background-color: darkcyan;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            width: 60px;
+            height: 36px;
+            display: flex;
+        }
+
+        .bx2 {
+            width: 60px;
+            height: 40px;
+            background-color: yellow;
+            position: absolute;
+            top: 50px;
+            left: 0px;
+            transition: 1s;
+        }
+/* 체크드 이동 */
+        /* .B1:checked~.bx {
+            left: 200px;
+            transition: 1s;
+        }
+
+        .B2:checked~.bx {
+            left: 300px;
+            transition: 1s;
+        }
+
+        .B3:checked~.bx {
+            left: 400px;
+            transition: 1s;
+        }
+
+        .B4:checked~.bx {
+            left: 500px;
+            transition: 1s;
+        }
+
+        .B5:checked~.bx {
+            left: 600px;
+            transition: 1s;
+        } */
+
+
+
+
+        .B1 {
+            position: absolute;
+            left: 100px;
+        }
+
+        .B2 {
+            position: absolute;
+            left: 150px;
+        }
+
+        .B3 {
+            position: absolute;
+            left: 200px;
+        }
+
+        .B4 {
+            position: absolute;
+            left: 250px;
+        }
+
+        .B5 {
+            position: absolute;
+            left: 300px;
+        }
+
+        .rd {
+            width: 114px;
+            height: 36px;
+        }
+
+        [type="radio"] {
+            appearance: none;
+            width: 114px;
+            height: 36px;
+            border: 1px solid black;
+
+        }
+
+        [type="radio"]:checked {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <ul style="display: flex;list-style: none;">
+            <style>
+                ul {
+                    display:flex;
+                    position: relative;
+                    width: 600px;
+                    height: 36px;
+                    flex-wrap: wrap;
+                }
+                li {
+                    border: 1px solid black;
+                    position: relative;
+                    left: 0;
+                    height: 36px;
+                    width: 114px;
+                }
+                label {
+                    position: absolute;
+                    left: 0;
+                }
+                input[type="radio"] {
+                    position: absolute;
+                    left: 0;
+                }
+                .bx {
+                    background-color: lawngreen;
+                    width: 114px;
+                    height: 36px;
+                    position: relative;
+
+                }
+                .bx2 {
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                }
+                .p1:checked ~ .bx > .bx2 {
+                    left: 200px !important;
+                }
+                a {
+                    z-index: 999 !important;
+                }
+                
+
+
+
+            </style>
+            <li class="p1" id="t01">
+                <a href="#t01">
+                <label class="CBX" for="#t1">체크
+                    <input class="rd B1" type="radio" name="버튼" id="t1">
+                </label></a>
+                
+            </li>
+            <li class="p1" id="t2">
+                <label class="CBX" for=""><a href="">체크<input class="rd B2" type="radio" name="버튼" id="#t2"></a></label>
+            </li>
+
+            <li>
+                <label class="CBX" for="#t3">체크</label>
+                <input class="rd B3" type="radio" name="버튼" id="t3">
+            </li>
+
+            <li>
+                <label class="CBX" for="#t4">체크</label>
+                <input class="rd B4" type="radio" name="버튼" id="t4">
+            </li>
+
+            <li>
+                <label class="CBX" for="#t5">체크</label>
+                <input class="rd B5" type="radio" name="버튼" id="t5">
+            </li>
+            <li  class="bx">
+                <div class="bx2"></div>
+            </li>
+        </ul>
+      
+    </div>
+</body>
+
+</html>

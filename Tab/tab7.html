@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .li:checked~div {
+        left: 100px;
+    }
+
+    li {
+        width: 100px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .li2 {
+        background-attachment: red !important;
+        width: 200px;
+        height: 40px;
+    }
+
+    .wrap>ul>li {
+        width: 100px;
+        height: 50px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+    }
+
+    input[type="radio"] {
+        appearance: none;
+    }
+
+    label {
+        width: 100px;
+        height: 50px;
+        background-color: yellow;
+        display: block;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .dv1 {
+        background-color: hotpink;
+        width: 100px;
+        height: 60px;
+    }
+
+    .dv1:target {
+        background-color: seagreen;
+    }
+
+    .dv2 {
+        width: 100px;
+        height: 60px;
+        background-color: khaki;
+    }
+
+    .dv2:target {
+        background-color: blueviolet;
+    }
+</style>
+
+<body>
+    <div class="wrap" style="margin: 50px;position: relative;top: 0;">
+        <ul style="display: flex;">
+            <li class="li">
+                <a href="#l1">
+                    <!-- <ul>
+                        <li> -->
+                    <label for="">검색</label>
+                    <input type="radio" name="radio" id="r1">
+                    <!-- </li>
+                    </ul> -->
+                </a>
+            </li>
+            <li>
+                <a href="#l2">
+                    <!-- <ul>
+                        <li> -->
+                    <input type="radio" name="radio" id="">버튼2
+                    <!-- </li>
+                    </ul> -->
+                </a>
+            </li>
+            <div
+                style="position: absolute; width: 200px;height: 50px;background-color: aqua;position: absolute;left: 0;top: 100px;">
+        </ul>
+        <div class="dv1" id="l1"></div>
+        <a class="" href="#r1"><div class="dv2"></div></a>
+        
+
+    </div>
+    </div>
+
+</body>
+
+</html>

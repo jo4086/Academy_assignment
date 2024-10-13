@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+        }
+        .CBX {
+            width: 114px;
+            height: 36px;
+            background-color: darkblue;
+            color: white;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input {
+            width: 60px;
+            height: 36px;
+            display: flex;
+        }
+        .bx {
+            width: 60px;
+            height: 40px;
+            background-color: yellow;
+            position: absolute;
+            top:50px;
+            left: 20px;
+            transition: 1s;
+        }
+        .B1:checked ~ .bx {
+            left: 200px;
+            transition: 1s;
+        }
+        .B2:checked ~ .bx {
+            left: 300px;
+            transition: 1s;
+        }
+        .B3:checked ~ .bx {
+            left: 400px;
+            transition: 1s;
+        }
+        .B4:checked ~ .bx {
+            left: 500px;
+            transition: 1s;
+        }
+        .B5:checked ~ .bx {
+            left: 600px;
+            transition: 1s;
+        }
+        .B1 {
+            position: absolute;
+            left:100px;
+        }
+        .B2 {
+            position: absolute;
+            left:150px;
+        }
+        .B3 {
+            position: absolute;
+            left:200px;
+        }
+        .B4 {
+            position: absolute;
+            left:250px;
+        }
+        .B5 {
+            position: absolute;
+            left:300px;
+        }
+        .rd {
+            display: inline-block;
+            background-color: aqua;
+            width: 100px;
+            height: 36px;
+        }
+        [type="radio"] {
+            appearance: none;
+            width: 100px;
+            height: 36px;
+            border: 1px solid black;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+    <label class="CBX" for="#t1">체크</label>
+    <input class="rd B1" type="radio" name="버튼" id="t1">
+    <label class="CBX" for="#t2">체크</label>
+    <input class="rd B2" type="radio" name="버튼" id="t2">
+    <label class="CBX" for="#t3">체크</label>
+    <input class="rd B3" type="radio" name="버튼" id="t3">
+    <label class="CBX" for="#t4">체크</label>
+    <input class="rd B4" type="radio" name="버튼" id="t4">
+    <label class="CBX" for="#t5">체크</label>
+    <input class="rd B5" type="radio" name="버튼" id="t5">
+    <div class="bx"></div>
+</div>
+</body>
+
+</html>
