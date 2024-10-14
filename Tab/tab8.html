@@ -35,63 +35,58 @@
             display: flex;
         }
         .bx {
-            width: 60px;
-            height: 40px;
+            box-sizing: border-box;
+            width: 114px;
+            height: 36px;
             background-color: yellow;
             position: absolute;
-            top:50px;
-            left: 20px;
-            transition: 1s;
+            top:0px;
+            left: 0px;
+            transition: 0.5s;
+            border: 1px solid black;
         }
         .B1:checked ~ .bx {
-            left: 200px;
-            transition: 1s;
+            left: 0px;
+            transition: 0.5s;
         }
         .B2:checked ~ .bx {
-            left: 300px;
-            transition: 1s;
+            left: 114px;
+            transition: 0.5s;
         }
         .B3:checked ~ .bx {
-            left: 400px;
-            transition: 1s;
+            left: 228px;
+            transition: 0.5s;
         }
         .B4:checked ~ .bx {
-            left: 500px;
-            transition: 1s;
+            left: 342px;
+            transition: 0.5s;
         }
         .B5:checked ~ .bx {
-            left: 600px;
-            transition: 1s;
+            left: 456px;
+            transition: 0.5s;
         }
         .B1 {
-            position: absolute;
-            left:100px;
+            left:00px;
         }
         .B2 {
-            position: absolute;
-            left:150px;
+            left:114px;
         }
         .B3 {
-            position: absolute;
-            left:200px;
+            left:228px;
         }
         .B4 {
-            position: absolute;
-            left:250px;
+            left:342px;
         }
         .B5 {
-            position: absolute;
-            left:300px;
+            left:456px;
         }
         .rd {
-            display: inline-block;
-            background-color: aqua;
-            width: 100px;
-            height: 36px;
+            /* background-color: aqua; */
+            position: absolute;
         }
         [type="radio"] {
             appearance: none;
-            width: 100px;
+            width: 114px;
             height: 36px;
             border: 1px solid black;
 
@@ -108,21 +103,25 @@
             left: 0;
         }
         .rd {
-            position: absolute;
-            left: 0px;
+            width: 114px;
         }
     </style>
     <div class="wrap">
     <label class="CBX" for="#t1">체크</label>
     <input class="rd B1" type="radio" name="버튼" id="t1">
+
     <label class="CBX" for="#t2">체크</label>
     <input class="rd B2" type="radio" name="버튼" id="t2">
+
     <label class="CBX" for="#t3">체크</label>
     <input class="rd B3" type="radio" name="버튼" id="t3">
+
     <label class="CBX" for="#t4">체크</label>
     <input class="rd B4" type="radio" name="버튼" id="t4">
+
     <label class="CBX" for="#t5">체크</label>
     <input class="rd B5" type="radio" name="버튼" id="t5">
+
     <div class="bx"></div>
 </div>
 </body>
