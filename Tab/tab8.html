@@ -1,129 +1,124 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         * {
             margin: 0;
             padding: 0;
-        }
-        body {
+         }
+         body {
             width: 100%;
             margin: 0 auto;
-        }
-        .wrap {
+         }
+         .wrap {
             width: 1000px;
             margin: 0 auto;
             position: relative;
             display: flex;
-        }
-        .CBX {
+         }
+         .CBX {
             width: 114px;
             height: 36px;
             background-color: darkblue;
             color: white;
-            display:flex;
+            display: flex;
             justify-content: center;
             align-items: center;
-        }
-        input {
+         }
+         input {
             width: 60px;
             height: 36px;
             display: flex;
-        }
-        .bx {
+         }
+         .bx {
             box-sizing: border-box;
             width: 114px;
             height: 36px;
             background-color: yellow;
             position: absolute;
-            top:0px;
+            top: 0px;
             left: 0px;
             transition: 0.5s;
             border: 1px solid black;
-        }
-        .B1:checked ~ .bx {
+         }
+         .B1:checked ~ .bx {
             left: 0px;
             transition: 0.5s;
-        }
-        .B2:checked ~ .bx {
+         }
+         .B2:checked ~ .bx {
             left: 114px;
             transition: 0.5s;
-        }
-        .B3:checked ~ .bx {
+         }
+         .B3:checked ~ .bx {
             left: 228px;
             transition: 0.5s;
-        }
-        .B4:checked ~ .bx {
+         }
+         .B4:checked ~ .bx {
             left: 342px;
             transition: 0.5s;
-        }
-        .B5:checked ~ .bx {
+         }
+         .B5:checked ~ .bx {
             left: 456px;
             transition: 0.5s;
-        }
-        .B1 {
-            left:00px;
-        }
-        .B2 {
-            left:114px;
-        }
-        .B3 {
-            left:228px;
-        }
-        .B4 {
-            left:342px;
-        }
-        .B5 {
-            left:456px;
-        }
-        .rd {
+         }
+         .B1 {
+            left: 00px;
+         }
+         .B2 {
+            left: 114px;
+         }
+         .B3 {
+            left: 228px;
+         }
+         .B4 {
+            left: 342px;
+         }
+         .B5 {
+            left: 456px;
+         }
+         .rd {
             /* background-color: aqua; */
             position: absolute;
-        }
-        [type="radio"] {
+         }
+         [type='radio'] {
             appearance: none;
             width: 114px;
             height: 36px;
             border: 1px solid black;
+         }
+      </style>
+   </head>
 
-        }
-        
-    </style>
-</head>
-
-<body>
-
-    <style>
-        div.wrap {
+   <body>
+      <style>
+         div.wrap {
             position: relative;
             left: 0;
-        }
-        .rd {
+         }
+         .rd {
             width: 114px;
-        }
-    </style>
-    <div class="wrap">
-    <label class="CBX" for="#t1">체크</label>
-    <input class="rd B1" type="radio" name="버튼" id="t1">
+         }
+      </style>
+      <div class="wrap">
+         <label class="CBX" for="#t1">체크</label>
+         <input class="rd B1" type="radio" name="버튼" id="t1" />
 
-    <label class="CBX" for="#t2">체크</label>
-    <input class="rd B2" type="radio" name="버튼" id="t2">
+         <label class="CBX" for="#t2">체크</label>
+         <input class="rd B2" type="radio" name="버튼" id="t2" />
 
-    <label class="CBX" for="#t3">체크</label>
-    <input class="rd B3" type="radio" name="버튼" id="t3">
+         <label class="CBX" for="#t3">체크</label>
+         <input class="rd B3" type="radio" name="버튼" id="t3" />
 
-    <label class="CBX" for="#t4">체크</label>
-    <input class="rd B4" type="radio" name="버튼" id="t4">
+         <label class="CBX" for="#t4">체크</label>
+         <input class="rd B4" type="radio" name="버튼" id="t4" />
 
-    <label class="CBX" for="#t5">체크</label>
-    <input class="rd B5" type="radio" name="버튼" id="t5">
+         <label class="CBX" for="#t5">체크</label>
+         <input class="rd B5" type="radio" name="버튼" id="t5" />
 
-    <div class="bx"></div>
-</div>
-</body>
-
+         <div class="bx"></div>
+      </div>
+   </body>
 </html>

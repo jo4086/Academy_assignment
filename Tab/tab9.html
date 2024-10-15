@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         * {
+            margin: 0;
+            padding: 0;
+         }
+         body {
+            width: 100%;
+            margin: 0 auto;
+         }
+         .wrap {
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+         }
+         .CBX {
+            width: 114px;
+            height: 36px;
+            background-color: darkblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         input {
+            width: 60px;
+            height: 36px;
+            display: flex;
+         }
+         .bx {
+            box-sizing: border-box;
+            width: 114px;
+            height: 36px;
+            background-color: yellow;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transition: 0.5s;
+            border: 1px solid black;
+         }
+         .B1:checked ~ .bx {
+            left: 0px;
+            transition: 0.5s;
+         }
+         .B2:checked ~ .bx {
+            left: 114px;
+            transition: 0.5s;
+         }
+         .B3:checked ~ .bx {
+            left: 228px;
+            transition: 0.5s;
+         }
+         .B4:checked ~ .bx {
+            left: 342px;
+            transition: 0.5s;
+         }
+         .B5:checked ~ .bx {
+            left: 456px;
+            transition: 0.5s;
+         }
+         .B1 {
+            left: 00px;
+         }
+         .B2 {
+            left: 114px;
+         }
+         .B3 {
+            left: 228px;
+         }
+         .B4 {
+            left: 342px;
+         }
+         .B5 {
+            left: 456px;
+         }
+         .rd {
+            /* background-color: aqua; */
+            position: absolute;
+         }
+         [type='radio'] {
+            appearance: none;
+            width: 114px;
+            height: 36px;
+            border: 1px solid black;
+         }
+      </style>
+   </head>
+
+   <body>
+      <style>
+         div.wrap {
+            position: relative;
+            left: 0;
+         }
+         .rd {
+            width: 114px;
+         }
+      </style>
+      <div class="wrap">
+         <style>
+            label,
+            input {
+               position: absolute;
+            }
+            a > * {
+               left: 114px;
+            }
+            a > label:nth-child(2),
+            a > input:nth-child(2) {
+               left: 228px;
+            }
+            a > label:nth-child(3),
+            a > input:nth-child(3) {
+               left: 342px;
+            }
+            a > label:nth-child(4),
+            a > input:nth-child(4) {
+               left: 456px;
+            }
+            a > label:nth-child(5),
+            a > input:nth-child(5) {
+               left: 572px;
+            }
+         </style>
+
+         <a href="">
+            <label class="CBX" for="#t1">체크</label>
+            <input class="rd B1" type="radio" name="버튼" id="t1" />
+         </a>
+
+         <a href="">
+            <label class="CBX" for="#t2">체크</label>
+            <input class="rd B2" type="radio" name="버튼" id="t2" />
+         </a>
+         <a href="">
+            <label class="CBX" for="#t3">체크</label>
+            <input class="rd B3" type="radio" name="버튼" id="t3" />
+         </a>
+         <a href="">
+            <label class="CBX" for="#t4">체크</label>
+            <input class="rd B4" type="radio" name="버튼" id="t4" />
+         </a>
+         <a href="">
+            <label class="CBX" for="#t5">체크</label>
+            <input class="rd B5" type="radio" name="버튼" id="t5" />
+         </a>
+
+         <div class="bx"></div>
+         <style>
+            ul {
+               list-style: none;
+               padding: 0;
+               margin: 0;
+               width: 570px;
+            }
+         </style>
+
+         <ul style="position: absolute; display: flex; top: 100px" class="search_content">
+            <style>
+               li {
+                  display: block;
+                  width: 114px;
+                  height: 36px;
+               }
+               input {
+                  width: 570px;
+                  box-sizing: border-box;
+                  height: 36px;
+                  position: absolute;
+                  left: 0;
+               }
+            </style>
+            <li class="search_box" id="tab01">
+               <input type="text" class="search_post" placeholder="원하시는 지역명, 지하철역, 단지명(아파트명)을 입력해주세요" />
+            </li>
+            <li class="search_box" id="tab02">
+               <input type="text" class="search_post" placeholder="원하시는 지역명, 지하철역을 입력해주세요" />
+            </li>
+            <li class="search_box" id="tab03">
+               <input type="text" class="search_post" placeholder="원하시는 지역명, 지하철역을 입력해주세요" />
+            </li>
+            <li class="search_box" id="tab04">
+               <input type="text" class="search_post" placeholder="원하시는 지역명, 지하철역, 오피스텔명을 입력해주세요" />
+            </li>
+            <li class="search_box" id="tab05">
+               <input type="text" class="search_post" placeholder="원하시는 지역명, 지하철역을 입력해주세요" />
+            </li>
+            <li>
+               <button type="button" class="tab_test_btn"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: white"></i></button>
+            </li>
+         </ul>
+      </div>
+   </body>
+</html>
