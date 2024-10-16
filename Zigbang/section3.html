@@ -26,7 +26,7 @@
                         <span>매매/전월세/신축분양 </span>
                      </a>
                      <ul class="sub-menu">
-                        <li><a href="#">매매/전·월세</a></li>
+                        <li><a href="#">매매/전 · 월세</a></li>
                         <li><a href="#">신축분양</a></li>
                         <li><a href="#">인구흐름</a></li>
                      </ul>
@@ -70,7 +70,7 @@
                         <span>임대/매매 </span>
                      </a>
                      <ul class="sub-menu">
-                        <li><a href="#">상가/점포</a></li>
+                        <li><a href="#">상가 · 점포</a></li>
                         <li><a href="#">사무실</a></li>
                         <li><a href="#">공유오피스</a></li>
                         <li><a href="#">찜한 매물</a></li>
@@ -100,7 +100,7 @@
                      <h2>어떤 집을 찾고 계세요?</h2>
                   </div>
                   <div style="display: flex; padding-top: 60px; flex-direction: column; align-items: center; position: relative">
-                     <ul class="tab_list_relative">
+                     <!-- <ul class="tab_list_relative">
                         <li class="tab_list">
                            <a href="#tab01" id="select_1">아파트</a>
                         </li>
@@ -118,6 +118,23 @@
                         </li>
                         <li>
                            <div class="dynamic">안녕</div>
+                        </li>
+                     </ul> -->
+                     <ul class="nav tab_list_relative">
+                        <li class="nav-item">
+                           <a class="nav-link" aria-current="page" href="#tab01">아파트</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#tab02">빌라,투룸+</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#tab03">원룸</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#tab04">오피스텔</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#tab05">상가</a>
                         </li>
                      </ul>
                      <ul class="search_content">
@@ -146,49 +163,110 @@
                </div>
             </section>
             <!-- 섹션1 end / 섹션2 start -->
+            <style>
+               .sec2 {
+                  width: 100%;
+               }
+               .sec2-contentbox {
+                  /* background-color: yellow; */
+                  margin: 0;
+                  padding: 0;
+                  list-style: none;
+                  width: 960px;
+                  height: 250px;
+                  display: flex;
+               }
+               .sec2-content {
+                  margin: 0;
+                  padding: 0;
+                  width: 290px;
+                  margin: 0 15px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+               }
+               .sec2-head-itembox {
+                  display: flex;
+                  height: 30px;
+                  align-items: center;
+                  /* background-color: red; */
+               }
+               h6 {
+                  display: flex;
+                  font-size: 18px;
+                  font-weight: bold;
+                  height: 30px;
+                  line-height: 30px;
+                  width: calc(100% - 66px);
+                  letter-spacing: -0.5px;
+               }
+               .sec2-head-item-btn {
+                  width: 66px;
+                  height: 30px;
+                  border-radius: 5px;
+                  letter-spacing: -0.8px;
+                  border: none;
+                  font-size: 13px;
+               }
+               hr {
+                  background-color: hsl(0, 0%, 80%);
+                  height: 1px;
+                  border: 0;
+                  margin-top: 5px;
+               }
+               .sec2-main-content > li {
+                  letter-spacing: -0.6px;
+                  font-size: 13px;
+                  font-weight: bold;
+                  line-height: 33.5px;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  height: 33.5px;
+               }
+            </style>
             <section class="main-sec sec2">
                <ul class="sec2-contentbox">
                   <li class="sec2-content sec2-item1">
                      <div class="sec2-head-itembox">
-                        <h6></h6>
-                        <button class="sec2-head-item-btn"></button>
+                        <h6>소개할게요</h6>
                      </div>
                      <hr />
                      <div>
                         <a href="#">
-                           <img src="./images/banner1.jpg" alt="배너1" />
+                           <img src="./images/banner1.jpg" alt="배너1" width="100% " style="margin-top: 10px" />
                         </a>
                      </div>
                   </li>
                   <li class="sec2-content sec2-item2">
                      <div class="sec2-head-itembox">
-                        <h6></h6>
-                        <button class="sec2-head-item-btn"></button>
+                        <h6>뉴스</h6>
+                        <button class="sec2-head-item-btn">더보기</button>
                      </div>
                      <hr />
                      <div>
-                        <ul>
-                           <li><a href=""></a></li>
-                           <li><a href=""></a></li>
-                           <li><a href=""></a></li>
-                           <li><a href=""></a></li>
-                           <li><a href=""></a></li>
+                        <ul class="sec2-main-content">
+                           <li><a href="#">9월 서울 아파트 매매 상승거래 비중 48.5%</a></li>
+                           <li><a href="#">10월 전국 3만 0,55세대 분양예정</a></li>
+                           <li><a href="#">10월 전국 2만 7,848세대 입주, 지방 63% 차지</a></li>
+                           <li><a href="#">랭킹데이터로 살펴본 2024년 수도권 아파트 시장</a></li>
+                           <li><a href="#">서울 아파트 매매거래 총액, 2024년 8월까지 44조원 규모</a></li>
                         </ul>
                      </div>
                   </li>
                   <li class="sec2-content sec2-item3">
                      <div class="sec2-head-itembox">
-                        <h6></h6>
-                        <button class="sec2-head-item-btn"></button>
+                        <h6>공지사항</h6>
+                        <button class="sec2-head-item-btn">더보기</button>
                      </div>
                      <hr />
                      <div>
-                        <ul>
-                           <li><a href=""></a></li>
-                           <li><a href=""></a></li>
-                           <li><a href=""></a></li>
-                           <li><a href=""></a></li>
-                           <li><a href=""></a></li>
+                        <ul class="sec2-main-content">
+                           <li><a href="#">[공지]일부 단지 실거래 정보 미노출 및 업데이트 지연 안내</a></li>
+                           <li><a href="#">[공지] 직방 개인정보 처리방침 (2024/09/19) 개정안내</a></li>
+                           <li><a href="#">[공지] 직방 서비스이용약관 (2024/07/09) 개정안내</a></li>
+                           <li><a href="#">[공지] 직방 개인정보처리방침 (2024/07/08) 개정안내</a></li>
+                           <li><a href="#">[공지] 직방 개인정보처리방침 (2024/01/12) 개정안내</a></li>
                         </ul>
                      </div>
                   </li>
@@ -198,24 +276,23 @@
             <style>
                .sec3 {
                   width: 100%;
-                  background-color: bisque;
+                  background-color: hsl(210, 20%, 95%);
                }
-               img {
-                  width: 230px;
-               }
-
                p {
                   font-size: 19px;
                   font-weight: bold;
                   letter-spacing: -1.8px;
                }
-               button {
-                  width: 180px;
-                  height: 50px;
+               .store {
+                  width: 190px;
+                  height: 60px;
                   font-size: 21px;
                   font-weight: bold;
                   letter-spacing: 0px;
-                  margin: 10px;
+                  margin: 0 10px 0 0;
+                  border: none;
+                  border-radius: 10px;
+                  background-color: hsl(0, 0%, 85%);
                }
                section {
                   display: flex;
@@ -227,22 +304,46 @@
                   flex-direction: column;
                   justify-content: center;
                }
-               .sec3 > div > * {
-                  margin: 10px 0px;
+               .main-sec3-img {
+                  background-color: black;
+                  width: 250px;
+                  height: 280px;
+                  background: url(./images/phone.png);
+                  background-size: contain;
+                  background-repeat: no-repeat;
+               }
+               i {
+                  margin-right: 8px;
                }
             </style>
             <section class="main-sec sec3">
-               <img src="./images/phone.png" alt="" />
+               <div class="main-sec3-img"></div>
                <div>
                   <p>직방앱을 다운받으세요!</p>
                   <div>
-                     <button style="margin-left: 0px">Google Play</button>
-                     <button>App store</button>
+                     <button class="store" style="margin-left: 0px"><i class="fa-brands fa-google-play fa-lg"></i>Google Play</button>
+                     <button class="store"><i class="fa-brands fa-apple fa-xl"></i>App store</button>
                   </div>
                </div>
             </section>
          </main>
-         <footer>1</footer>
+         <footer>
+            <div>
+               <p style="letter-spacing: 0.5px">회사소개 | 채용정보 | 이용약관 | <span style="font-weight: bold">개인정보 처리방침</span> | 위치기반 서비스 이용약관 | 중개사 사이트 바로가기</p>
+
+               <span>상호 : (주)직방 | 대표 : 안성우 | 사업자등록번호 : 120-87-61559</span><br />
+               <span>주소 : 서울특별시 강남구 영동대로 731, 지하 2층 (청담동, 신영빌딩) (우 : 06072)</span><br />
+               <span>통신판매업 신고번호 : 제2021-서울강남-06358호</span><br />
+               <span>이메일 : cs@zigbang.com | 서비스제휴문의 :partnership@zigbang.com | 분양광고 문의 : ad@zigbang.com | 팩스 : 02-568-4908</span>
+            </div>
+            <div class="footer-ic">
+               <i class="footer-icon fa-brands fa-facebook-f"></i>
+               <i class="footer-icon fa-brands fa-youtube fa-lg"></i>
+               <i class="footer-icon fa-solid fa-blog"></i>
+               <i class="footer-icon fa-solid fa-location-dot"></i>
+            </div>
+            <p style="text-align: center; font-size: 13px; color: hsl(0, 0%, 60%); letter-spacing: 0.2px; font-weight: normal">Copyright © ZIGBANG. All Rights Reserved.</p>
+         </footer>
       </div>
    </body>
 </html>
